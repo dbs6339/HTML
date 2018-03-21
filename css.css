@@ -1,0 +1,46 @@
+            a:link{ text-decoration: none; color:black;}
+            a:visited{
+                color:black;
+            }
+            a:hover{
+                color:rgb(162, 253, 253);
+            }
+            a:active{
+                color:azure;
+            }
+            li{list-style: none;}
+            .night{
+                font: 20px ;
+                background-color: transparent ;
+                background-image: none ;
+                border:0;
+                outline: 0;
+                padding: 2px 10px 2px 10px;    
+            }
+            .night:hover{ color: aliceblue;}
+            .night:active{ color: aliceblue;}
+
+            .container{
+                display:grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .sidebar{
+                grid-column-start: 4;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 2;
+                background-color: transparent ;
+                width: 170;
+                margin: 20px 20px 40px 30px;
+                box-shadow: 0px 11px 31px rgba(0,0,0,0.3); /*그림자 */
+                border-radius: 10px;            /* 윤곽 둥글게 */
+                border-left: 30px solid ;
+                border-bottom: 30px solid  linear-gradient(-90deg, #FFFFFF, #FFFFFF);
+            
+
+            }
+            ul li {
+                display:inline-grid;                 /* 세로나열을 가로나열로 변경 */
+               /* border-left:1px solid #999;     /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */
+                padding:0 10px;                 /* 각 메뉴 간격 */ 
+            }

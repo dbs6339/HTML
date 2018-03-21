@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>ex9</title>
+        <link rel="stylesheet" href="css.css" type="text/css">
+        <script src="colors.js"></script>
+
+    </head>
+    <body>
+    <div>
+    <h1><a = href="index.html">WEB</a></h1>
+       
+            <input class="night" type="button" value="night" onclick="
+                  nightDayHandeler(this)
+             ">
+            <ol>
+                <li><a = href="1.html" >HTML</a></li>
+                <li><a = href="2.html" >CSS</a></li>
+                <li><a = href="3.html" >JS</a></li>
+            </ol>
+            <!-- 예제메뉴 삽입 -->
+            <div class="sidebar">
+                <ul>
+                    <script>
+                        menuMaker();
+                    </script>
+                </ul>
+            </div>
+            
+        </div>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two(){
+          document.write('<li>2-1</li>');
+          document.write('<li>2-2</li>');
+        }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+      </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+    <script>
+      function onePlusOne(){
+        document.write(1+1+'<br>');
+      }
+      onePlusOne();
+      function sum(left, right){
+        document.write(left+right+'<br>');
+      }
+      function sumColorRed(left, right){
+        document.write('<div style="color:red">'+left+right+'</div><br>');
+      }
+      sum(2,3); // 5
+      sumColorRed(2,3); // 5
+      sum(3,4); // 7
+    </script>
+    <h2>Return</h2>
+    <script>
+      function sum2(left, right){
+        return left+right;
+      }
+      document.write(sum2(2,3)+'<br>');
+      document.write('<div style="color:red">'+sum2(2,3)+'</div>');
+      document.write('<div style="font-size:3rem;">'+sum2(2,3)+'</div>');
+    </script>
+    <!--disqus 하단부-->
+    <p style="margin-top:40px;"> </p>
+            <p>
+      <div id="disqus_thread">
+      </div>
+    <script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://yesme-devnote.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </p>
+    </body>
+</html>
